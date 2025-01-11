@@ -1,6 +1,6 @@
 # About the Assignment
-This is the Assignment on Performance test using JMeter where 
-**Task1** is for performance test with the JMeter collection (booking.jmx) and 
+This is the Assignment on Performance test using JMeter where
+**Task1** is for performance test with the JMeter collection (booking.jmx) and
 **Task2** is with D-money which is a transactional system where deposit money,send money and make payment transactions were performed.
 
 # Technology used:
@@ -44,7 +44,15 @@ Test Steps:
 9. Continue increase the Load as user count, until error appears.
 10. Repeat step-9 again and for next 2-3 iterations decrease the load.
 11. Note all the observation to check at which Load and deviation server is getting error and to finalize the stress point and mark that as RED.
-
+    
+**Task2** a. Create separate thread groups under one test plan to cover the scenarios for:
+○ 5 agents perform deposits for 10 customers.
+○ 5 customers send money to another 10 customers.
+○ 5 customers make payments to 2 merchants.
+          b. Create separate thread group for user creation for different roles.
+          c. Please make sure of the Agents are already deposited with enough money from the SYSTEM.
+          d. Use small amounts for Send Money and Make Payment, so that balance can't become empty.
+          e. From the .jmx file location run the test from cmd and save the test report by the command "JMeter -n -t [jmx file] -l [results file] -e -o [Path to web report folder]" for each thread group according to the needs.
 
 # Test Reports:
 # Task1: **Load Test Images** 
@@ -55,7 +63,6 @@ Test Steps:
 ![LoadTest1](https://github.com/user-attachments/assets/4d90fbab-f973-41d7-908e-26347c9702c7)
 
 **Stress Test Images**
-
 ![StressTest12](https://github.com/user-attachments/assets/6e227927-9416-4ee4-a64b-ad9b178ba9fe)
 ![StressTest11](https://github.com/user-attachments/assets/39ec3fac-92c9-4ffa-8897-17e96a16cdf2)
 ![StressTest10](https://github.com/user-attachments/assets/60841113-fb79-4449-8dda-07df1f8aa9d7)
@@ -70,6 +77,7 @@ Test Steps:
 ![StressTest1](https://github.com/user-attachments/assets/722328ae-6b4a-4a9a-9e84-21e4ff8afefa)
 
 Test Report with Test Steps for Task1: [Booking_TestReport_T1FRL.xlsx](https://github.com/user-attachments/files/18387049/Booking_TestReport_T1FRL.xlsx)
+
 
 # Task2: **Generated HTML report**
 ![SendMoney](https://github.com/user-attachments/assets/d0ccc107-f22e-404f-ba82-06bab9774e80)
